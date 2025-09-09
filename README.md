@@ -5,23 +5,6 @@ Extracts and organizes highlights/quotes from Kindle´s myclippings.txt into sep
 ## Problem
 Kindle generates a file, myclippings.txt, where it dumps highlights from all books that you read chronologically rather than by book, and adds long, unnecessary strings to your highlight bloating the content. I needed a way to quickly sort the highlights by book for future reference, and to erase Kindle´s additional metadata.
 
-## Before & After
-
-### Before: Your `My Clippings.txt` (raw export)
-
-![Before](screenshots/before.png)
-
-> A messy, chronological list of highlights from multiple books.
-
-### After: Organized, clean files per book
-
-![After](screenshots/after.png)
-
-> Each book gets its own `.txt` file, sorted by page number — even Roman numerals!
-Unprocessed entries? Check `no-processed.txt`
-
-![Unprocessed](screenshots/unprocessed.png)
-> Entries that couldn’t be parsed are saved for manual review — no data loss!
 
 ## Features
 - Separates mixed highlights from multiple books that Kindle collects in myclippings.txt by detecting the separator ==========
@@ -38,8 +21,11 @@ Unprocessed entries? Check `no-processed.txt`
 
 ## Language Support
 
-By default, the script looks for the word **“página”** (Spanish) to find page numbers.
-✏**To use with other languages**, edit this line at the top of the script `kindle_quotes_extractor.py`: PAGE_KEYWORD = "página" (change página to the translation of "page" in your Kindle´s language)
+By default, the script looks for the word **“página”** (Spanish) to find page numbers or document´s position.
+✏**To use with other languages**, edit this line at the top of the script `kindle_quotes_extractor.py`: 
+Change these to match your export language
+PAGE_KEYWORD = "página"      # e.g., "page", "Seite", "pagina"
+POSITION_KEYWORD = "posición" # e.g., "location", "posizione", "Position"
 
 ## Requirements
 
@@ -54,6 +40,24 @@ Just clone and run!
 3. Run:
    ```bash
    python kindle_quotes_extractor.py
+
+## Before & After
+
+### Before: Your `My Clippings.txt` (raw export)
+
+![Before](screenshots/before.png)
+
+> A messy, chronological list of highlights from multiple books.
+
+### After: Organized, clean files per book
+
+![After](screenshots/after.png)
+
+> Each book gets its own `.txt` file, sorted by page number — even Roman numerals!
+> Entries that couldn’t be parsed are saved for manual review — no data loss! Check `no-processed.txt`
+
+![New files](screenshots/newfiles.png)
+
 
 ## Development
 Developed with assistance from Claude AI and Qwen AI for refinement and implementation.
