@@ -22,7 +22,7 @@ Kindle generates a file, myclippings.txt, where it dumps highlights from all boo
 ## Language Support
 
 By default, the script looks for the word **“página”** (Spanish) to find page numbers or document´s position.
-✏**To use with other languages**, edit this line at the top of the script `kindle_quotes_extractor.py`: 
+**To use with other languages**, edit this line at the top of the script `kindle_quotes_extractor.py`: 
 Change these to match your export language
 PAGE_KEYWORD = "página"      # e.g., "page", "Seite", "pagina"
 POSITION_KEYWORD = "posición" # e.g., "location", "posizione", "Position"
