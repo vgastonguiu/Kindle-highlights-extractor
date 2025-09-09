@@ -7,7 +7,7 @@ Kindle generates a file, My Clippings.txt, where it dumps highlights from all bo
 
 
 ## Features
-- Separates mixed highlights from multiple books that Kindle collects in myclippings.txt by detecting the separator ==========
+- Separates mixed highlights from multiple books that Kindle collects in My Clippings.txt by detecting the separator ==========
 - Groups quotes by book title and arranges them by page vs chronologically
 - Handles both long quotes and individual vocabulary words
 - Sorts highlights by page number
