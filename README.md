@@ -1,6 +1,6 @@
 # Kindle Highlights Extractor
 
-Extracts and organizes highlights/quotes from Kindle´s myclippings.txt into separate files per book.
+Extracts and organizes highlights/quotes from Kindle´s My Clippings.txt into separate files per book.
 
 ## Problem
 Kindle generates a file, myclippings.txt, where it dumps highlights from all books that you read chronologically rather than by book, and adds long, unnecessary strings to your highlight bloating the content. I needed a way to quickly sort the highlights by book for future reference, and to erase Kindle´s additional metadata.
