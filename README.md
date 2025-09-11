@@ -35,9 +35,9 @@ Just clone and run!
 
 ## Quick Start
 
-1. Your Kindle by default generates a file called My Clippings.txt, upload or move it to the same directory as kindle_quotes_extractor.py
-2. Edit `PAGE_KEYWORD` in the script if your export is not in Spanish
-3. Run:
+1. Your Kindle by default generates a file called My Clippings.txt. Upload or move it to the same directory as kindle_quotes_extractor.py
+2. Edit `PAGE_KEYWORD`  = "página" and `POSITION_KEYWORD` = "posición"  in the script if your export is not in Spanish to the equivalent of "page" and "position" in your Kindle´s language.
+4. Run:
    ```bash
    python kindle_quotes_extractor.py
 
